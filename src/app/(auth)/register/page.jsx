@@ -1,11 +1,11 @@
 import React from 'react';
+import RegisterClient from "@/app/(auth)/register/RegisterClient";
 
-const Page = () => {
+const Register = () => {
+
     return (
-        <div>
-            
-        </div>
+        <RegisterClient/>
     );
 };
 
-export default Page;
+export default Register;
