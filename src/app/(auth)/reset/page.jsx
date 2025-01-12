@@ -1,11 +1,10 @@
 import React from 'react';
+import ResetClient from "@/app/(auth)/reset/ResetClient";
 
-const Page = () => {
+const Reset = () => {
     return (
-        <div>
-            
-        </div>
+        <ResetClient/>
     );
 };
 
-export default Page;
+export default Reset;
