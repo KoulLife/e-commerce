@@ -1,6 +1,8 @@
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import ToastProvider from "@/components/toastProvider/ToastProvider";
+import Footer from "@/layouts/footer/Footer";
+import Header from "@/layouts/header/Header";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -21,8 +23,10 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header/>
         <ToastProvider/>
         {children}
+        <Footer/>
         </body>
         </html>
     );
